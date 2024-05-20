@@ -10,3 +10,6 @@ created a new markdown file to learn how to switch between and merge branches.
 * to see all branches:
 "git branch" 
 the current branch will be highlighted and starred. 
+
+## new section
+this section was added in new-test-branch
