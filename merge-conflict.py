@@ -1,6 +1,6 @@
-print("hello there general kenobi")
+print("hello there")
 
 print("conflict here")
 
-print("general grevious")
+print("general kenobi")
 
