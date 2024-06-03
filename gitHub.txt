@@ -1,0 +1,99 @@
+GITHUB
+
+git is a free and open source version control system -> version control is the management of changes to documents etc (like google drive)
+
+directory is the folder
+terminal or command line is interface for text commands
+CLI is command line interface
+repository is a project folder from git
+git is the version control system
+github is the online repository database
+
+cd = change directory
+
+git commands:
+clone -> copies a repository from github into a local folder on your machine
+add -> track your files and changes in Git
+commit -> save your files in Git
+push -> upload git commits to remote repo (github)
+pull -> dowload changes from remote repo to local machine (also "sync")
+
+ssh keys: used instead of username and password to interact with gitHub with your local machine. when you clone a repo or push changes, your private key is used to authenticate rather than a password
+the .pub key is the one you put on gitHub. the one without .pub is PRIVATE key (do not put anywhere online)
+
+cloning:
+from bash terminal:
+1. type "git clone" followed by http address of github repo
+2. type "cd" followed by name of cloned repo to go make it the current directory
+3. "ls -la" will display ALL files, including hidden ones. .git file is the github directory that tells the machine that youre in a git repo
+
+to stage:
+1. type "git add" followed by a period ("git add .") to stage ALL files to commit (untracked, modified, etc) or type the name of the specific file(s) you want to stage ("git add test.py")
+
+to commit:
+1. type "git commit -m" followed by the message to go with the commit in quotations, ex. git commit -m "updating README"
+2. 2nd "-m" can be added for description of commit
+3. IMPORTANT: commiting only saves files to your LOCAL repo!!! you have to push to save them to gitHub repo!
+
+to push:
+1.  type "git push origin" and then the branch title, ex "git push origin main"
+
+other bash commands:
+"git status" will give you status of all files: which are staged to commit, what has been modified but not committed, untracked (unadded) files, etc
+"git commit -am 'message' " for if adding/committing a file that has already been pushed to github
+
+when creating a repo from local machine:
+1. create new folder
+2. cd into that new folder
+3. type "git init" into bash terminal
+4. create a README.md file 
+5. stage and commit: ""git add FILENAME" then "git commit -m MESSAGE"
+6. create a new blank repo in gitHub
+7. type "git remote add origin" followed by github repo address
+8. type "git push -u origin master" to push committed files. -u means in future pushes, you only have to type "git push" (sets upstream)
+
+note: when working directly with github, adding is staging
+
+
+git branching
+"main" branch is the default
+if you make a new branch from the default and make changes on it, it will not be reflected on the main branch (each branch is standalone)
+useful for adding new features if youre not going to finish them in one go
+branches can be merged later
+
+to create a new branch:
+"git checkout -b NAMEOFNEWBRANCH"
+to check which branch yorue on:
+"git branch", starred/highlighted is the current branch
+to switch to a different branch"
+"git checkout BRANCHTOSWITCHTO"
+
+to merge locally:
+"git diff DIFFBRANCH" tells you what code is different between that branch and main
+can use "merge" to merge locally, but this method is used more:
+1. push: will tell you "To push the current branch and set the remote as upstream, use git push --set-upstream origin new-test-branch "
+2. enter this line
+3. tells you to make pull request. 
+
+pull request: 
+1. go to gitHub and click "pull requests"
+2. create new pull request
+3. add comments/description
+4. click merge button then confirm
+5. in vs-code: type "git pull" to see updates
+6. can delete branch by "git branch -d branch-name" if merged, "git branch -D branch-name" if not merged
+
+merge conflicts:
+1. if you have changes in the same place on main and also on the new branch, you'll get this error:
+error: Your local changes to the following files would be overwritten by checkout:
+        merge-conflict.py
+Please commit your changes or stash them before you switch branches.
+Aborting
+2. to fix: commit changes on main branch, then switch to conflicting branch
+3. type "git merge main"
+4. will get merge conflict. must change code in the window that pops up to let git know what you want to keep 
+5. git status will tell you "unmerged paths"
+6. 
+
+
+as you;re working, you'll want to keep pulling updates to main branch. then you'll want to keep merging your working branch with your updated copy of the main branch so merging the whole thing later won't be as bad
