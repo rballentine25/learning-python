@@ -1,3 +1,5 @@
+# recursion problems from my discrete math hw this week 
+
 def Fib(n): 
     if n <= 0:
         return 0
@@ -19,6 +21,8 @@ def S(n):
 print("S(4) is:", S(4))
 
 
+# read more on: why does seq need to be defined as none in the header first?
+# kinda skipped ahead a bit and wrote these before i actually learned about lists
 recList = None
 def recaman(n, seq = None):
     global recList
@@ -38,7 +42,7 @@ def recaman(n, seq = None):
             newRec = prev + n
         
         seq.append(newRec)
-        recList = seq[:]
+        recList = seq.copy()
         return newRec
 recaman(10)
 print("first 10 numbers of Recaman's sequence are:\n", recList)
