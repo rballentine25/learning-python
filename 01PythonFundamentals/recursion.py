@@ -21,6 +21,9 @@ def S(n):
 print("S(4) is:", S(4))
 
 
+# recaman's sequence, for a(n) where n > 0: a(n) = a(n-1) - n if that number is positive and 
+# not already in the sequence, otherwise a(n) = a(n-1) + n
+
 # read more on: why does seq need to be defined as none in the header first?
 # kinda skipped ahead a bit and wrote these before i actually learned about lists
 recList = None
