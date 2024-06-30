@@ -9,3 +9,5 @@ the difference)
 
 do i need anything similar to 'this' keyword when referring to instance variables with 
 the same name as method header variables or should i just name them something different
+
+whats a view object
