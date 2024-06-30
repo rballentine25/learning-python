@@ -1,0 +1,11 @@
+tuples: 
+what does it mean for something to be hashable?
+can you partially unpack a tuple and what would unpacking be useful for
+whats enumerate
+
+
+how are objects created/defined in python vs how theyre created/defined in java (whats 
+the difference)
+
+do i need anything similar to 'this' keyword when referring to instance variables with 
+the same name as method header variables or should i just name them something different
