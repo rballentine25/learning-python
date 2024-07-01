@@ -19,13 +19,13 @@ Choose one: """)
             break
 
 def addItem():
-    return 
+    pass
 
 def removeItem():
-    return 
+    pass
 
 def dispInventory():
-    return 
+    pass 
 
 
 launchInventory()
