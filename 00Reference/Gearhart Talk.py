@@ -27,6 +27,7 @@ D = 250
 # N samples per class of D independent gaussian variables each
 data = np.random.randn(N*C,D)
 classes = np.repeat(np.arange(C),N)
+print(classes.shape)
 
 alldata = np.append(data, classes.reshape(N*C,1), 1)
 np.savetxt('randdata.csv',alldata,delimiter=',')
