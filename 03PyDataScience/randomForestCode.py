@@ -45,6 +45,8 @@ X_train.shape, X_test.shape, y_train.shape, y_test.shape
 print(X_train)
 
 # --------- SETTING UP CLASSIFIER --------
+# if not specified, default values are n_estimators=100 (num of trees), 
+# max_features= sqrt(n_features), min_samples_split=2, bootstrap=true
 clf = RandomForestClassifier()
 # use get_params() to see the current parameters for the classifier. leave 
 # as default for now
