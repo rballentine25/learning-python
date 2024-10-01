@@ -15,3 +15,15 @@ ignition sources vs ignition control, with recommendations? see "Modeling and ma
 analysis of danger levels by location
 
 wildfire data science journal articles (web of science): https://www-webofscience-com.ezproxy.libraries.wright.edu/wos/woscc/summary/marked/relevance/1?markedListId=Wildfire 
+* Analysis of Wildfire Danger Level Using Logistic Regression Model in Sichuan Province, China: https://www.webofscience.com/wos/woscc/full-record/WOS:001131084400001
+* Effectiveness in Mitigating Forest Fire Ignition Sources: A Statistical Study Based on Fire Occurrence Data in China: https://www.webofscience.com/wos/woscc/full-record/WOS:000902447500001
+* Wildfire evacuation decision modeling using GPS data: Wildfire evacuation decision modeling using GPS data: https://www.webofscience.com/wos/woscc/full-record/WOS:000885108800003
+* Estimating wildfire evacuation decision and departure timing using large-scale GPS data: https://www.webofscience.com/wos/woscc/full-record/WOS:000802883500003
+* A probability-based risk metric for operational wildfire risk management: https://www.webofscience.com/wos/woscc/summary/marked/relevance/1?markedListId=Wildfire
+* Next Day Wildfire Spread: A Machine Learning Dataset to Predict Wildfire Spreading From Remote-Sensing Data: https://www.webofscience.com/wos/woscc/full-record/WOS:000838672300005
+* Data-Driven Wildfire Risk Prediction in Northern California: https://www.webofscience.com/wos/woscc/full-record/WOS:000609752400001
+* Modeling and mapping wildfire ignition risk in Portugal: https://www.webofscience.com/wos/woscc/full-record/WOS:000272546000003
+
+Kaggle datasets:
+* [U.S. Wildfire data (plus other attributes)](https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes)
+* [Wildfires](https://www.kaggle.com/datasets/willianoliveiragibin/wildfires)
