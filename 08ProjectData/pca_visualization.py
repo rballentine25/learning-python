@@ -31,3 +31,5 @@ plt.show()
 
 # Explained variance ratio
 print("Explained Variance Ratio:", pca.explained_variance_ratio_)
+
+print(df_eval00["FireMask"])

@@ -3,16 +3,16 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 
-filename = 'C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/next-day-wildfire-spread/next_day_wildfire_spread_eval_00.tfrecord'
+filename = 'C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/next-day-wildfire-spread/next_day_wildfire_spread_train_14.tfrecord'
 filenames = [filename]
 raw_dataset = tf.data.TFRecordDataset(filenames)
-name = 'eval_00'
+name = 'train_14'
 
 count = sum(1 for _ in raw_dataset)
 
 print(f'Total number of entries: {count}')
 
-for raw_record in raw_dataset.take(1000):
+for raw_record in raw_dataset.take(1001):
   example = tf.train.Example()
   example.ParseFromString(raw_record.numpy())
   #print(example)
@@ -26,13 +26,12 @@ for key, feature in example.features.feature.items():
   kind = feature.WhichOneof('kind')
   result[key] = np.array(getattr(feature, kind).value)
 
-print(result)
+# print(result)
 
-print("\n")
-print(result['tmmx'])
+# print("\n")
+# print(result['tmmx'])
 
 df = pd.DataFrame(result)
 print(df.head())
 
-#df.to_pickle(name + '_pickle.pk1')
-df.to_csv('C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/'+ name + '.csv', index=False)
+df.to_csv('C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/csv-files/'+ name + '.csv', index=False)
