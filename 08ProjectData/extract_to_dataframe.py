@@ -3,10 +3,12 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 
-filename = 'C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/next-day-wildfire-spread/next_day_wildfire_spread_train_14.tfrecord'
+name = 'eval_00'
+fileloc = 'C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/next-day-wildfire-spread/next_day_wildfire_spread_'
+filename = fileloc + name + '.tfrecord'
 filenames = [filename]
 raw_dataset = tf.data.TFRecordDataset(filenames)
-name = 'train_14'
+
 
 count = sum(1 for _ in raw_dataset)
 
