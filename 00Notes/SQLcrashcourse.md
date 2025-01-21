@@ -102,9 +102,11 @@ on t1.ProductID = t2.ProductID
 here we name OrderDetails as t1 and Products as t2. We take all fields from t1 and only Price and ProductName from t2, renaming Price as PricePerUnit. We then left join the tables when the ProductIDs match.  
 
 ### join types
-- __left join__: all entries existing in table 1 will be kept, and only matching entries in t2 will be included. if an entry exists in t2 but not in t1, it will be ommited.   
+- __left join__: all entries existing in table 1 will be kept, and only matching entries in t2 will be included. if an entry exists in t2 but not in t1, it will be omitted.   
 - __right join__: opposite from left, only entries in t1 that match an entry in t2 will be included  
-- __inner join__: only entries that have matches in BOTH tables will be kept (like an AND operation). if there is an entry in either table that does not have a match, it will be ommited  
+- __inner join__: only entries that have matches in BOTH tables will be kept (like an AND operation). if there is an entry in either table that does not have a match, it will be omitted
+- __outer join__: all entries in both tables will be kept regardless of matches
+
 
 ## unionizing tables: T/B
 Tacking on new ROWS to the existing table  
