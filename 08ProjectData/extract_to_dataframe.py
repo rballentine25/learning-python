@@ -3,8 +3,8 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 
-name = 'eval_00'
-fileloc = 'C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/next-day-wildfire-spread/next_day_wildfire_spread_'
+name = 'train_08'
+fileloc = '/learning-python/08ProjectData/mid-process-data-files/next-day-wildfire-spread/next_day_wildfire_spread_'
 filename = fileloc + name + '.tfrecord'
 filenames = [filename]
 raw_dataset = tf.data.TFRecordDataset(filenames)
@@ -34,6 +34,8 @@ for key, feature in example.features.feature.items():
 # print(result['tmmx'])
 
 df = pd.DataFrame(result)
+new_order = ['FireMask', 'PrevFireMask', 'tmmn', 'tmmx', 'vs', 'th', 'pr', 'sph', 'pdsi', 'elevation', 'NDVI', 'erc', 'population']
+df = df[new_order]
 print(df.head())
 
-df.to_csv('C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/csv-files/'+ name + '.csv', index=False)
+df.to_csv('C:/Users/rball/OneDrive/Documents/school/24-25 fall/Git Repos f24/learning-python/08ProjectData/mid-process-data-files/TO-COMBINE/'+ name + '.csv', index=False)
