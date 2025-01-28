@@ -1,0 +1,12 @@
+apparent order for pytorch notebooks:
+    1. tensor computing
+    2. gradient computation
+    3. first neural net 
+    4. mnist cnnn
+    5. celeb faces
+
+WHEN RUNNING ON A'S PC:
+    use r-osgc kernel!!!!
+    python 3.10.10
+    cuda 12.4
+    pytorch 2.5.1
