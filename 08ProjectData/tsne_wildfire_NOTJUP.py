@@ -11,7 +11,7 @@ import matplotlib.colors as mcolors
 start = time.time()
 
 #leave at this one to show dr raymer (this was weirdest). takes about 46s
-df2 = pd.read_excel("mid-process-data-files/TO-COMBINE/train_05_rearranged.xlsx")
+df2 = pd.read_excel("mid-process-data-files/TO-COMBINE/eval_00_rearranged.xlsx")
 df2.head()
 
 # for tSNE, X is the features and Y is the labels (here just firemask)
