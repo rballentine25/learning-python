@@ -1,0 +1,1 @@
+- cant tell if i need to rewrite/copy over all the data prep/data visualizaton methods
